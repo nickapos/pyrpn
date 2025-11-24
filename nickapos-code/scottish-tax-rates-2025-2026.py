@@ -78,26 +78,48 @@ def s_rates():
     high_diff=salary-high_rate_thres
     high_tax=high_diff*high_rate
     tax=high_tax+interim_tax+basic_tax+start_tax
+    PRX(tax_band_header)
     PRX(high_diff)
-    PRX(iterim_diff)
+    PRX(interim_diff)
     PRX(basic_diff)
     PRX(start_diff)
+    ADV()
+    PRX(tax_header)
+    PRX(high_tax)
+    PRX(interim_tax)
+    PRX(basic_tax)
+    PRX(start_tax)
   elif salary >= interim_rate_thres:
     interim_diff=salary-interim_rate_thres
     interim_tax=interim_diff*interim_rate
     tax=interim_tax+basic_tax+start_tax
+    PRX(tax_band_header)
     PRX(interim_diff)
     PRX(basic_diff)
     PRX(start_diff)
+    ADV()
+    PRX(tax_header)
+    PRX(interim_tax)
+    PRX(basic_tax)
+    PRX(start_tax)
   elif salary >= basic_rate_thres:
     basic_diff=salary-basic_rate_thres
     basic_tax=basic_diff*basic_rate
     tax=basic_tax+start_tax
+    PRX(tax_band_header)
     PRX(basic_diff)
     PRX(start_diff)
+    ADV()
+    PRX(tax_header)
+    PRX(basic_tax)
+    PRX(start_tax)
   else:
     start_tax=salary*start_rate
     tax_list.append(start_tax)
     tax=start_tax
+    PRX(tax_band_header)
+    PRX(start_tax)
+    ADV()
+    PRX(tax_header)
     PRX(start_tax)
   PRX(tax)
