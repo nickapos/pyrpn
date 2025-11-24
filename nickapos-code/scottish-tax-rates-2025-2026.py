@@ -38,6 +38,9 @@ def s_rates():
   start_tax=start_diff*start_rate
   tax_band_header="TaxBa"
   tax_header="TaxAm"
+  banner="******"
+  PRX(salary)
+  PRX(banner)
   if salary >= top_rate_thres:
     top_diff=salary-top_rate_thres
     top_tax=top_diff*top_rate
@@ -50,6 +53,7 @@ def s_rates():
     PRX(basic_diff)
     PRX(start_diff)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(top_tax)
     PRX(adv_tax)
@@ -68,6 +72,7 @@ def s_rates():
     PRX(basic_diff)
     PRX(start_diff)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(adv_tax)
     PRX(high_tax)
@@ -84,6 +89,7 @@ def s_rates():
     PRX(basic_diff)
     PRX(start_diff)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(high_tax)
     PRX(interim_tax)
@@ -98,6 +104,7 @@ def s_rates():
     PRX(basic_diff)
     PRX(start_diff)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(interim_tax)
     PRX(basic_tax)
@@ -110,6 +117,7 @@ def s_rates():
     PRX(basic_diff)
     PRX(start_diff)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(basic_tax)
     PRX(start_tax)
@@ -120,6 +128,11 @@ def s_rates():
     PRX(tax_band_header)
     PRX(start_tax)
     ADV()
+    PRX(banner)
     PRX(tax_header)
     PRX(start_tax)
+  PRX(banner)
   PRX(tax)
+  PRX(banner)
+  ADV()
+  ADV()
