@@ -136,3 +136,4 @@ def s_rates():
   PRX(banner)
   ADV()
   ADV()
+  print("Taxable salary:",salary," Total tax:",tax)
