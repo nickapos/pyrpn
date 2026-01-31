@@ -1,0 +1,50 @@
+LBL "finvest"
+MVAR "a"
+VARMENU "finvest"
+STOP
+EXITALL
+"a"
+├"= "
+ARCL ST X
+RCL a
+STO 00
+AVIEW
+0.75
+RCL 00
+*
+"tb"
+├"= "
+ARCL ST X
+AVIEW
+0.25
+RCL 00
+*
+STO 02
+"s"
+├"= "
+ARCL ST X
+AVIEW
+RCL 02
+0.4
+/
+STO 03
+"fi"
+├"= "
+ARCL ST X
+AVIEW
+0.6
+RCL 03
+*
+STO 04
+"b"
+├"= "
+ARCL ST X
+AVIEW
+RCL 00
+RCL 03
+-
+"lb"
+├"= "
+ARCL ST X
+AVIEW
+RTN
